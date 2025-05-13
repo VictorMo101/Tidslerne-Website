@@ -1,0 +1,87 @@
+:root {
+
+    /* Dimensions */
+    --width-full: 100%;
+    --width-12col: 1200px;     
+    --width-box: 1300px;
+    --width-box-medium: 1000px;
+    --width-12col-medium: 923.1px;
+    --width-box-small: 768px;
+    --width-12col-small: 709px;
+    --width-box-mobile: 360px;
+    --width-12col-mobile: 334px;
+
+    /* Grid Settings */
+    --grid-gap: 10px;
+    --padding-default: 20px;
+
+    /* Colors */
+    --color-background: #201011;
+    --color-text: #FFFFFF;
+    --color-box: #46B6AF;
+    --color-polaroid: #EDE0CD;
+  }
+
+
+/* Reset CSS */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    
+  }
+  html {
+    margin-top:0px !important;
+    overflow-x: hidden;
+  }
+  /* Global CSS */
+  
+  body {
+    background-color: #2bb8a2;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    background: #201011;
+    height: auto;
+    width:var(--width-full);
+    overflow-x: hidden;
+
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: var(--color-text);
+    font-weight: 700;
+  }
+
+  .eventSiteBody{
+    width: var(--width-12col);
+    background-color: #46B6AF;
+    margin: auto;
+    height: 700px;
+  }
+
+  .eventSiteImage {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  background-color: blue;
+  }
+
+  .eventSiteHeader {
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+    top: -100px;
+  }
+
+
+
