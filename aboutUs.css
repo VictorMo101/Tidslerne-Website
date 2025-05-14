@@ -55,10 +55,14 @@
   
   /* Facts */
   .facts {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 86, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto auto 3rem auto;
   }
   .facts ul {
     list-style: disc inside;
@@ -66,10 +70,36 @@
   
   /* Values */
   .values {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto auto 3rem auto;
   }
+
+  .benefits{
+    position: relative;
+    z-index: 10;
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 800px;
+    align-items: center;
+    margin: auto;   
+  }
+
+  .benefits p{
+    margin-bottom: 10px;
+  }
+
+  .benefits img{
+    margin: auto;
+    align-items: center;
+  }
+
   .value-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -84,10 +114,14 @@
   
   /* About */
   .about {
-    background: #fff;
-    padding: 1.5rem;
-    margin-top: 1rem;
-    border-radius: 8px;
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 86, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto auto 3rem auto;
   }
   .btn-secondary {
     display: inline-block;
@@ -97,20 +131,50 @@
   }
   
   /* CTA */
-  .cta {
+  .callToAction {
     text-align: center;
     padding: 2rem 1rem;
   }
-  .cta .btn,
-  .cta .btn-secondary {
+  .callToAction .btn,
+  .callToAction .btn-secondary {
     margin: 0.5rem;
   }
   
-  /* Footer */
   footer {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.9rem;
     color: #666;
   }
+
+  .eventSiteBody{
+    width: var(--width-12col);
+    background-color: #46B6AF;
+    margin: auto;
+    height: 700px;
+  }
+
+  .eventSiteImage {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  background-color: blue;
+  }
+
+  .eventSiteHeader {
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+    top: -100px;
+  }
   
+  .p1 {
+    font-size: 1rem;
+    color: var(--color-text);
+    font-weight: 700;
+  }
