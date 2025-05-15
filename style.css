@@ -130,106 +130,120 @@
     margin: auto auto;
   }
 
-    .eventSiteCardsSection{
-    margin: 50px auto 0 auto;  
-    width: var(--width-12col);
-    background-color: #46B6AF;
+  .eventSiteCardsSection{
+  margin: 50px auto 0 auto;  
+  width: var(--width-12col);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  gap: 2rem;
+  justify-content: center;
+  }
+
+  .eventSiteCard {
+    height: 480px;
+    width: 380px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 60px;
     display: flex;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
-    height: 1000px;
-    }
+  }
 
-    .eventSiteCard {
-      height: 480px;
-      width: 380px;
-      transition: all 0.3s ease-in-out;
-      margin-bottom: 20px;
-      
-    }
+  .eventSiteCard:hover {
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+  }
 
-    .eventSiteCard:hover {
-      z-index: 20;
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      
-    }
-
-    .eventSiteCardImage, img{
-      height: 220px;
-      width: 100%;
-      background-color: blue;
-      z-index: 1;
-    }
-
-    .eventSiteCardoff{
-      margin: 1rem;
-    }
-    .eventSiteCardoff p {
+  .eventSiteCardImage, img{
+    height: 220px;
+    width: 100%;
+    background-color: blue;
+    z-index: 1;
     position: relative;
-    margin: 0;
-    padding: 0.2rem 0.4rem;
-    font-size: 1.5rem;
-    top: -220px;
-    color: red;
-    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .eventSiteCardBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 0, 0, 0.8);
     border: 3px solid red;
-    display: inline-block;
-    }
+    color: var(--color-text);
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    border-radius: 4px;
+  }
 
+  .eventSiteCardBadgeAny {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(207, 200, 75, 0.8);
+    border: 3px solid rgba(207, 200, 75, 0.8);
+    color: var(--color-text);
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    border-radius: 4px;
+  }
 
-    .eventSiteCardPT{
-      width: 80px;
-      height: 80px;
-      background-color: rgb(69, 186, 89);
-      border: 4px solid rgb(55, 140, 166);
-      position: relative;
-      border-radius: 50%;
-      top: -40px;
-      left: 270px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      display: flex;
-      z-index: 10;
-    }
+  .eventSiteCardPT {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(69, 186, 89);
+    border: 4px solid rgb(55, 140, 166);
+    position: relative;
+    border-radius: 50%;
+    top: -40px;
+    left: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    z-index: 10;
+  }
+  
+  .eventSiteCardPToff {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(199, 35, 35);
+    border: 4px solid rgb(55, 140, 166); 
+    position: relative;
+    border-radius: 50%;
+    top: -40px;
+    left: 270px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    z-index: 10;
+  }
 
-    .eventSiteCardPToff{
-      width: 80px;
-      height: 80px;
-      background-color: rgb(199, 35, 35);
-      border: 4px solid rgb(55, 140, 166);
-      border-color: solid 4px #46B6AF;
-      position: relative;
-      border-radius: 50%;
-      top: -40px;
-      left: 270px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      display: flex;
-      z-index: 10;
-    }
+    .eventSiteCardPT p, .eventSiteCardPToff p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+  .eventSiteCardHeader{
+    height: 320px;
+    width: 100%;
+    background-color: rgb(55, 140, 166);
+    padding: 2rem;
+    position: relative;
+  }
 
-    .eventSiteCardoff{
-      
-    }
+  .eventSiteCardCate {
+    font-weight: bold;
+    color: #A880B9;
+    font-size: larger;
+  }
 
-     .eventSiteCardPT p, .eventSiteCardPToff p{
-      font-size: 1.5rem;
-      color: white;
-      font-weight: 400;
-      text-align: center;
-    }
-    .eventSiteCardHeader{
-      height: 280px;
-      width: 100%;
-      background-color: rgb(55, 140, 166);
-      padding: 2rem;
-      position: relative;
-    }
-
-    .eventSiteCardHeader i{
-      font-size: 25px;
-    }
+  .eventSiteCardHeader i{
+    font-size: 25px;
+  }
 
