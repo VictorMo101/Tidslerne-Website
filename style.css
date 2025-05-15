@@ -146,14 +146,15 @@
     transition: all 0.3s ease-in-out;
     margin-bottom: 60px;
     display: flex;
+    position: relative;
   }
 
-  .eventSiteCard:hover {
+  .eventSiteCard:hover:not(.active) {
     z-index: 20;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    
   }
+  
 
   .eventSiteCardImage, img{
     height: 220px;
@@ -247,3 +248,17 @@
     font-size: 25px;
   }
 
+  .eventSiteCardDetails {
+  position: fixed;
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  background-color: #46B6AF;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+  }
