@@ -1,0 +1,41 @@
+.gallerySiteBody{
+    width: var(--width-12col);
+    background-color: #46B6AF;
+    margin: auto;
+    height: 700px;
+  }
+
+  .gallerySiteImage {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  background-color: blue;
+  }
+
+  .gallerySiteHeader {
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+    top: -100px;
+  }
+  
+  .gallerySiteContent {
+    columns: 300px;
+    width: var(--width-12col);
+    margin: auto;
+
+    :hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .gallerySiteContent img{
+    width: 100%;
+    margin-bottom: 1rem;
+  }

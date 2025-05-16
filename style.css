@@ -135,130 +135,91 @@
   width: var(--width-12col);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: auto;
   gap: 2rem;
   justify-content: center;
   }
 
   .eventSiteCard {
-    height: 480px;
     width: 380px;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 60px;
-    display: flex;
+    overflow: visible;
     position: relative;
-  }
-
-  .eventSiteCard:hover:not(.active) {
-    z-index: 20;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    perspective: 1000px; 
   }
   
-
-  .eventSiteCardImage, img{
-    height: 220px;
+  .eventSiteCardWhole {
     width: 100%;
-    background-color: blue;
-    z-index: 1;
+    height: 100%;
+    transition: transform 0.3s ease;
+    transform-origin: center;
     position: relative;
   }
-
+  
+  .eventSiteCard:hover .eventSiteCardWhole {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .eventSiteCardImage, .eventSiteCardImage img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    position: relative; 
+  }
+  
   .eventSiteCardBadge {
     position: absolute;
     top: 10px;
     left: 10px;
     background-color: rgba(255, 0, 0, 0.8);
     border: 3px solid red;
-    color: var(--color-text);
+    color: white;
     padding: 0.3rem 0.6rem;
     font-size: 1.2rem;
     font-weight: bold;
     z-index: 2;
     border-radius: 4px;
-  }
-
-  .eventSiteCardBadgeAny {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(207, 200, 75, 0.8);
-    border: 3px solid rgba(207, 200, 75, 0.8);
-    color: var(--color-text);
-    padding: 0.3rem 0.6rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    z-index: 2;
-    border-radius: 4px;
-  }
-
-  .eventSiteCardPT {
-    width: 80px;
-    height: 80px;
-    background-color: rgb(69, 186, 89);
-    border: 4px solid rgb(55, 140, 166);
-    position: relative;
-    border-radius: 50%;
-    top: -40px;
-    left: 270px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    z-index: 10;
   }
   
+  .eventSiteCardPT,
   .eventSiteCardPToff {
     width: 80px;
     height: 80px;
-    background-color: rgb(199, 35, 35);
-    border: 4px solid rgb(55, 140, 166); 
-    position: relative;
+    position: absolute;
+    top: 180px;
+    left: 280px;
     border-radius: 50%;
-    top: -40px;
-    left: 270px; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    display: flex;
-    z-index: 10;
-  }
-
-    .eventSiteCardPT p, .eventSiteCardPToff p{
     font-size: 1.5rem;
     color: white;
     font-weight: 400;
-    text-align: center;
+    z-index: 10;
   }
-  .eventSiteCardHeader{
+  
+  .eventSiteCardPT {
+    background-color: rgb(69, 186, 89);
+    border: 4px solid rgb(55, 140, 166);
+  }
+  
+  .eventSiteCardPToff {
+    background-color: rgb(199, 35, 35);
+    border: 4px solid rgb(55, 140, 166);
+  }
+  
+  .eventSiteCardHeader {
     height: 320px;
     width: 100%;
     background-color: rgb(55, 140, 166);
     padding: 2rem;
     position: relative;
+    color: white;
   }
-
+  
   .eventSiteCardCate {
     font-weight: bold;
     color: #A880B9;
     font-size: larger;
-  }
-
-  .eventSiteCardHeader i{
-    font-size: 25px;
-  }
-
-  .eventSiteCardDetails {
-  position: fixed;
-  width: 1200px;
-  max-width: 100%;
-  height: auto;
-  background-color: #46B6AF;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2rem;
-  border-radius: 1rem;
-  color: white;
   }
