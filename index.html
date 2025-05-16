@@ -5,10 +5,434 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <nav>
+      <ul>
+        <li> <h1>Tidslerne</h1> </li>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Behandlinger</a></li>
+        <li><a href="eventSite.html">Arrangementer</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="heroContainer"> 
+            <div class="heroContainerText"> 
+                <p class="text-xl">Family guy</p>
+                <p class="text-4xl">Kræft n shit</p>
+                <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+                <a href="#" class="custom-button"> Kræft n shit → </a>
+            </div>
+            <div class="heroContainerImage"><img src="https://picsum.photos/710/600" alt="Random image from Lorem Picsum"></div>
+        </div>
+<div class="aboutContainer">
+  <div class="aboutImage">
+    <img src="https://picsum.photos/400/300" alt="Tidslerne arrangement">
+  </div>
+  <div class="aboutContent">
+    <h2 class="!text-3xl">Hvem er Tidslerne</h2>
+    <p>Tidslerne er en frivillig kræftforening, der støtter mennesker, 
+      som lever med senfølger efter kræft og kræftbehandling. Vi skaber
+      fællesskab, forståelse og et trygt rum, hvor du ikke behøver forklare alt –
+      her møder du andre, der ved, hvordan det føles. Gennem aktiviteter, samtale og
+      videndeling arbejder vi for at bryde tabuer og give plads til livet efter kræft.</p>
+    <a href="#" class="custom-button">Læs mere →</a>
+  </div>
+</div>
+
+<div class="section-breaker">
+  <hr class="line">
+  <h2 class="!text-4xl">Kommende arrangementer</h2>
+  <hr class="line">
+</div>
+
+
+ <section class="eventSiteCardsSection">
+       
+        <div class="eventSiteCard cursor-pointer group" onclick="eventSiteCardDetails(this)">
+            <div class="eventSiteCardWhole">
+              <div class="eventSiteCardImage">
+                <img src="../img/sagi.jpg" alt="">
+                <div class="eventSiteCardPT">
+                  <p>Gratis</p>
+                </div>
+              </div>
     
+              <div class="eventSiteCardHeader">
+                <p class="eventSiteCardCate">Udendørs</p>
+                <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                <div class="grid !pt-[10px]">
+                  <div class="flex">
+                    <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                    <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                  </div>
+                  <div class="flex">
+                    <i class="fa-solid fa-location-dot !pr-5"></i>
+                    <p>Mozartsvej 13 2450 København SV</p>
+                  </div>
+                </div>
+              </div>
+              <div id="eventDetails" class="eventSiteCardDetails hidden">
+                <p>Her kommer mere information om arrangementet. Medbring egen kop!</p>
+              </div>
+            </div>
+          </div>
+        
+
+       
+        <div class="eventSiteCard cursor-pointer">
+            <div class="eventSiteCardWhole">
+                <div class="eventSiteCardImage">
+                    <img src="../img/sagi.jpg" alt="">
+                    <div class="eventSiteCardPToff">
+                        <p>50,-</p>
+                    </div>
+                </div>
+                <div class="eventSiteCardHeader">
+                    <p class="eventSiteCardCate">Udendørs</p>
+                    <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                    <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                    <div class="grid !pt-[10px]">
+                        <div class="flex">
+                            <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                            <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fa-solid fa-location-dot !pr-5"></i>
+                            <p>Mozartsvej 13 2450 København SV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+         <div class="eventSiteCard cursor-pointer">
+            <div class="eventSiteCardWhole">
+                <div class="eventSiteCardImage">
+                    <img src="../img/sagi.jpg" alt="">
+                    <div class="eventSiteCardPToff">
+                        <p>50,-</p>
+                    </div>
+                </div>
+                <div class="eventSiteCardHeader">
+                    <p class="eventSiteCardCate">Udendørs</p>
+                    <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                    <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                    <div class="grid !pt-[10px]">
+                        <div class="flex">
+                            <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                            <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fa-solid fa-location-dot !pr-5"></i>
+                            <p>Mozartsvej 13 2450 København SV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+ </section>
+
+ <div class="section-breaker">
+  <hr class="line">
+  <h2 class="!text-4xl">Seneste artikler</h2>
+  <hr class="line">
+</div>
+
+
+<div class="card-container"> 
+ <div class="card">
+  <div class="image-container">
+    <img src="../img/sagi.jpg" alt="" />
+    <div class="label">Komplementær behandling</div>
+  </div>
+  <h2>Nammam appelsin</h2>
+  <p class="date">14. januar 2024</p>
+  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+</div>
+ <div class="card">
+  <div class="image-container">
+    <img src="../img/sagi.jpg" alt="" />
+    <div class="label">Komplementær behandling</div>
+  </div>
+  <h2>Nammam appelsin</h2>
+  <p class="date">14. januar 2024</p>
+  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+</div>
+<div class="card">
+  <div class="image-container">
+    <img src="../img/sagi.jpg" alt="" />
+    <div class="label">Komplementær behandling</div>
+  </div>
+  <h2>Nammam appelsin</h2>
+  <p class="date">14. januar 2024</p>
+  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+</div>
+<div class="card">
+  <div class="image-container">
+    <img src="../img/sagi.jpg" alt="" />
+    <div class="label">Komplementær behandling</div>
+  </div>
+  <h2>Nammam appelsin</h2>
+  <p class="date">14. januar 2024</p>
+  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+</div>
+
+    <!-- <div class="card">
+      <div class="label">Kost og krop</div>
+      <img src="../img/sagi.jpg" alt="" />
+      <h2>Nammam appelsin</h2>
+      <p class="date">14. januar 2024</p>
+      <p class="body">ablemand kom inden i ablemand kom inden i giv mig dine børn inden i mig</p>
+    </div>
+    <div class="card">
+      <div class="label">Konventionel behandling</div>
+      <img src="../img/sagi.jpg" alt="" />
+      <h2>Nammam appelsin</h2>
+      <p class="date">14. januar 2024</p>
+      <p class="body">ablemand kom inden i ablemand kom inden i giv mig dine børn inden i mig</p>
+    </div>
+    <div class="card">
+      <div class="label">Komplementær behandling</div>
+      <img src="../img/sagi.jpg" alt="" />
+      <h2>Nammam appelsin</h2>
+      <p class="date">14. januar 2024</p>
+      <p class="body">ablemand kom inden i ablemand kom inden i giv mig dine børn inden i mig</p>
+    </div>
+    <div class="card">
+      <div class="label">Komplementær behandling</div>
+      <img src="../img/sagi.jpg" alt="" />
+      <h2>Nammam appelsin</h2>
+      <p class="date">14. januar 2024</p>
+      <p class="body">ablemand kom inden i ablemand kom inden i giv mig dine børn inden i mig</p>
+    </div> -->
+  </div>
+
+
+
+
+    </main>
 </body>
 </html>
+
+<style>
+    :root {
+
+    /* Dimensions */
+    --width-full: 100%;
+    --width-12col: 1200px;     
+    --width-box: 1300px;
+    --width-box-medium: 1000px;
+    --width-12col-medium: 923.1px;
+    --width-box-small: 768px;
+    --width-12col-small: 709px;
+    --width-box-mobile: 360px;
+    --width-12col-mobile: 334px;
+
+    /* Grid Settings */
+    --grid-gap: 10px;
+    --padding-default: 20px;
+
+    /* Colors */
+    --color-background: #201011;
+    --color-text: #FFFFFF;
+    --color-box: #46B6AF;
+    --color-polaroid: #EDE0CD;
+  }
+
+    body{
+        background-color: white;
+        width: var(--width-12col);
+        margin: auto;
+    }
+
+    /* Header */
+  nav {
+    background: #A880B9;
+    color: white;
+    padding: 1rem;
+  }
+ nav h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+.heroContainer{
+        display:flex;
+        flex-wrap: wrap;
+        color: #FFFFFF;
+    }
+.heroContainerText{
+        background-color: #2D2525;
+        padding-left: 205px;
+        padding-top: 140px;
+    }
+
+.heroContainerImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* object-fit: cover; */
+}
+.custom-button {
+  display: inline-block;
+  background-color: #b287c5; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.custom-button:hover {
+  background-color: #9e70b5; 
+}
+
+.heroContainerText, .heroContainerImage {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+  }
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutImage {
+  flex: 1 1 40%;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50px;
+}
+
+.aboutContent {
+  flex: 1 1 55%;
+  color: #2d2d2d;
+}
+
+.aboutContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.aboutContent p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}  
+
+.section-breaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.section-breaker h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.section-breaker .line {
+  flex: 1;
+  border: none;
+  border-top: 2px solid #b287c5;
+  height: 1px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 20px;
+    justify-content: center ;
+}
+
+.card{
+ border-radius: 8px;
+ width: 250px;
+ pad: 15px;
+ box-sizing: border-box; 
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; 
+  background-color: #6a1b9a; 
+  color: white;
+  padding: 5px 10px;
+  margin: none;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+h2{
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.date{
+    font-size:14px;
+    margin-bottom: 10px;
+}
+
+
+
+  @media (max-width: 768px) {
+    .heroContainerText, .heroContainerImage {
+      flex: 1 1 100%;
+    }
+  }
+</style>
