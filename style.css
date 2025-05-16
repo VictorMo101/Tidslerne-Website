@@ -222,4 +222,27 @@
     font-weight: bold;
     color: #A880B9;
     font-size: larger;
+
   }
+
+  .eventSiteCardHeader i{
+    font-size: 25px;
+  }
+
+  .eventSiteCardDetails {
+  position: fixed;
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  background-color: #46B6AF;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+  }
+
+  /* css for index.html starter her under */
+
