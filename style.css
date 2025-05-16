@@ -20,6 +20,7 @@
     --color-text: #FFFFFF;
     --color-box: #46B6AF;
     --color-polaroid: #EDE0CD;
+    --color-primary: #A880B9;
   }
 
 
@@ -88,21 +89,21 @@
   }
 
 
-  .eventSiteBody{
+  .SiteBody{
     width: var(--width-12col);
     background-color: #46B6AF;
     margin: auto;
     height: 700px;
   }
 
-  .eventSiteImage {
+  .SiteImage {
   position: relative;
   z-index: 1;
   height: 500px;
   background-color: blue;
   }
 
-  .eventSiteHeader {
+  .SiteHeader {
     position: relative;
     z-index: 10;        
     background-color: rgba(211, 26, 26); 
