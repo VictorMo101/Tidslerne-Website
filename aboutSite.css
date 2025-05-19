@@ -1,0 +1,63 @@
+.SiteHeaderAbout {
+    position: relative;
+    z-index: 10;        
+    background-color: rgba(211, 26, 26); 
+    padding: 3rem;
+    width: var(--width-12col);
+    height: auto;
+    align-items: center;
+    margin: auto;
+    top: -100px;
+  }
+
+  .SiteHeaderAboutBox{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .SiteHeaderAboutBox img{
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .SiteHeaderAboutBoxText {
+    width: 60%;
+  }
+
+  .SiteHeaderAboutBoxImage {
+    width: 40%;
+    height: auto;
+  }
+
+.ImgInfoBoxs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0 1rem 0; 
+}
+
+.InfoBox {
+  background-color: #d3a7e3;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 8px;
+  width: 100%;
+  min-width: 100px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.InfoBox span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  color: #f3f3f3;
+}
