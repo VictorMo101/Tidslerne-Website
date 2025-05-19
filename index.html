@@ -47,6 +47,27 @@
   </div>
 </div>
 
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat">
+      <img src="icons/calendar.svg" alt="Kalender ikon" class="icon" />
+      <h3>30+</h3>
+      <p>år med støtte til kræftramte</p>
+    </div>
+    <div class="stat">
+      <img src="icons/group.svg" alt="Gruppe ikon" class="icon" />
+      <h3>5600+</h3>
+      <p>Døde af cancer</p>
+    </div>
+    <div class="stat">
+      <img src="icons/handshake.svg" alt="Håndtryk ikon" class="icon" />
+      <h3>100+</h3>
+      <p>arrangementer afholdt</p>
+    </div>
+  </div>
+</section>
+
+
 <div class="section-breaker">
   <hr class="line">
   <h2 class="!text-4xl">Kommende arrangementer</h2>
@@ -488,6 +509,47 @@ h2{
   font-family: inherit;
   font-weight: 500;
 }
+
+/* pula */
+.stats-section {
+  background: linear-gradient(rgba(176, 143, 196, 0.95), rgba(176, 143, 196, 0.95)),
+              url("images/thistle-bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.stats-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.stat {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.stat .icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  color: white;
+}
+
 
 
 /* footer */
