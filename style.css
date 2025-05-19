@@ -90,17 +90,36 @@
 
 
   .SiteBody{
-    width: var(--width-12col);
-    background-color: #46B6AF;
-    margin: auto;
-    height: 700px;
+    width: var(--width-full);
+    margin: 0 auto 200px auto;
+    justify-content: center;
+    height: 600px;
   }
 
   .SiteImage {
   position: relative;
-  z-index: 1;
   height: 500px;
-  background-color: blue;
+  width: 100%;
+   overflow: hidden;
+  }
+  
+
+  .SiteImage img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .SiteImgGrad{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #FDF6FA;
+  background: linear-gradient(180deg,rgba(253, 246, 250, 0) 50%, rgba(253, 246, 250, 1) 100%);
   }
 
   .SiteHeader {
@@ -108,7 +127,7 @@
     z-index: 10;        
     background-color: rgba(211, 26, 26); 
     padding: 3rem;
-    width: 1000px;
+    width: var(--width-12col);
     height: 300px;
     align-items: center;
     margin: auto;
