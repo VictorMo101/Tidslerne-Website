@@ -1,4 +1,4 @@
-    :root {
+:root {
 
     /* Dimensions */
     --width-full: 100%;
@@ -48,16 +48,29 @@
     text-decoration: none;
   }
 
-.heroContainer{
-        display:flex;
-        flex-wrap: wrap;
-        color: #FFFFFF;
-    }
-.heroContainerText{
-        background-color: #2D2525;
-        padding-left: 205px;
-        padding-top: 140px;
-    }
+.heroContainer {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.heroContainerText {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.45); /* semi-transparent for readability */
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  text-align: center;
+}
 
 .heroContainerImage img {
   width: 100%;
@@ -523,11 +536,83 @@ h2{
   color: white;
   }
 /* bbbbbbb */
-
+/* Carousel styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s;
+}
+.carousel-slide {
+  min-width: 100%;
+  display: none;
+}
+.carousel-slide.active {
+  display: flex;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #b08fc4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
+.carousel-btn:hover { background: #8a6ca3; }
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #d1c3e0;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.indicator.active {
+  background: #b08fc4;
+  border: 2px solid #8a6ca3;
+}
+@media (max-width: 900px) {
+  .carousel-slide.active { flex-direction: column; }
+}
 
 
   @media (max-width: 768px) {
     .heroContainerText, .heroContainerImage {
       flex: 1 1 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .heroContainerText {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    .heroContainer {
+      min-height: 250px;
     }
   }

@@ -25,15 +25,40 @@
     </nav>
 
     <main>
-        <div class="heroContainer"> 
-            <div class="heroContainerText"> 
-                <p class="text-xl">Family guy</p>
-                <p class="text-4xl">Kræft n shit</p>
-                <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
-                <a href="#" class="custom-button"> Kræft n shit → </a>
-            </div>
-            <div class="heroContainerImage"><img src="https://picsum.photos/710/600" alt="Random image from Lorem Picsum"></div>
-        </div>
+        <div class="carousel">
+  <button class="carousel-btn left" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+  <div class="carousel-slides">
+    <div class="heroContainer carousel-slide active" style="background-image: url('https://picsum.photos/1200/600?1');">
+      <div class="heroContainerText">
+        <p class="text-xl">Family guy</p>
+        <p class="text-4xl">Kræft n shit</p>
+        <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+
+      </div>
+    </div>
+    <div class="heroContainer carousel-slide" style="background-image: url('https://picsum.photos/1200/600?2');">
+      <div class="heroContainerText">
+        <p class="text-xl">Slide 2</p>
+        <p class="text-4xl">Noget andet</p>
+        <p>Her kan du skrive tekst til slide 2. Skift billedet og teksten som du vil.</p>
+
+      </div>
+    </div>
+    <div class="heroContainer carousel-slide" style="background-image: url('https://picsum.photos/1200/600?3');">
+      <div class="heroContainerText">
+        <p class="text-xl">Slide 3</p>
+        <p class="text-4xl">Endnu en slide</p>
+        <p>Her er tredje slide. Du kan tilpasse indholdet frit.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-btn right" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="carousel-indicators">
+    <span class="indicator active" onclick="goToSlide(0)"></span>
+    <span class="indicator" onclick="goToSlide(1)"></span>
+    <span class="indicator" onclick="goToSlide(2)"></span>
+  </div>
+</div>
 <div class="aboutContainer">
   <div class="aboutImage">
     <img src="https://picsum.photos/400/300" alt="Tidslerne arrangement">
