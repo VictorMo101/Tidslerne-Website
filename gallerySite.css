@@ -28,16 +28,18 @@
     columns: 300px;
     width: var(--width-12col);
     margin: auto;
+    
 
     :hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
+        transform: scale(1.03);
     }
+
   }
 
   .gallerySiteContent img{
     width: 100%;
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
   }
 
     /* footer */

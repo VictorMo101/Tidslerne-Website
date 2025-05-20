@@ -42,6 +42,7 @@
   }
 
   .videoSectionHeader h5 {
+    color: var(--color-text);
     background-color: var(--color-primary);
     padding: 0.5rem;
     display: inline-block;
@@ -63,7 +64,7 @@
     min-height: 280px;
     line-height: 110px;
     text-align: center;
-    background-color: var(--color-box);
+
     margin-right: 4px;
   }
 
