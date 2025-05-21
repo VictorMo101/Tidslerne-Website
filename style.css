@@ -61,7 +61,7 @@
 
 .navbarContent {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -93,6 +93,29 @@
   font-weight: 500;
   color: var(--color-text);
 }
+
+.menuWidth{
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  max-width: var(--width-full);
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menuWidth12{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menuOpen {
+  height: 100%;
+  background-color: var(--color-primary);
+  padding: 2rem 2rem;
+  width: 350px;
+} 
 
   
   h1 {

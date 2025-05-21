@@ -32,7 +32,6 @@ function resetAutoAdvance() {
   autoAdvance();
 }
 
-
 // Initialize
 showSlide(0);
 autoAdvance();
