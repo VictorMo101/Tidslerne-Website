@@ -1,0 +1,72 @@
+body {
+    background-color: #FDF6FA !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.patientSiteFilter{
+    width: var(--width-12col);
+    background-color: var(--color-text);
+    margin: auto;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .patientSiteFilterBox{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto auto;
+  }
+
+    .SiteBody{
+    margin: 0 auto 120px auto !important;
+  }
+
+  .patientStories {
+       margin: 30px auto 30px auto; 
+  }
+
+  .patientStoryBoxArea {
+    width: var(--width-12col);
+    height: auto;
+
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3.75rem;
+  }
+
+.patientStoryBox {
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+.patientStoryBox:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+    .patientStoryBox img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+  }
+
+  .patientStoryBoxText {
+    height: auto;
+    width: auto;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .patientStoryBoxTextDesc {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .patientStoryBoxTextAuthor {
+    font-size: 1rem;
+    font-weight: 300;
+  }
