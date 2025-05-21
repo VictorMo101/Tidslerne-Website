@@ -61,6 +61,12 @@
     
 }
 
+.articleDelText2{
+    font-size: 2rem;
+    padding: 0 2rem;
+    
+}
+
 .articleSocialMedia{
     width: 600px;
     display: flex;
@@ -105,5 +111,16 @@
     color: var(--color-text);
 }
 
+.articleSectionRelated{
+    width: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+}
+
+.articleSectionContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
 
