@@ -3,9 +3,49 @@ const slides = document.querySelectorAll('.carousel-slide');
 const indicators = document.querySelectorAll('.indicator');
 let autoAdvanceTimer = null;
 
-function showSlide(idx) {
+function showSlide(idx, direction = 1) {
+  if (idx === currentSlide) return;
+
+  const prevSlide = slides[currentSlide];
+  const nextSlide = slides[idx];
+
+  // Prepare next slide position
+  nextSlide.style.display = 'flex';
+  nextSlide.style.position = 'absolute';
+  nextSlide.style.left = '0';
+  nextSlide.style.top = '0';
+  nextSlide.style.width = '100%';
+  nextSlide.style.zIndex = '2';
+  nextSlide.style.transform = `translateX(${direction > 0 ? '100%' : '-100%'})`;
+
+  // Animate previous slide out
+  anime({
+    targets: prevSlide,
+    translateX: [ '0%', direction > 0 ? '-100%' : '100%' ],
+    duration: 600,
+    easing: 'easeInOutQuad',
+    complete: function() {
+      prevSlide.style.display = 'none';
+      prevSlide.style.transform = '';
+      prevSlide.style.position = '';
+      prevSlide.style.zIndex = '';
+    }
+  });
+
+  // Animate next slide in
+  anime({
+    targets: nextSlide,
+    translateX: [ direction > 0 ? '100%' : '-100%', '0%' ],
+    duration: 600,
+    easing: 'easeInOutQuad',
+    complete: function() {
+      nextSlide.style.transform = '';
+      nextSlide.style.position = '';
+      nextSlide.style.zIndex = '';
+    }
+  });
+
   slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === idx);
     indicators[i].classList.toggle('active', i === idx);
   });
   currentSlide = idx;
@@ -14,17 +54,18 @@ function showSlide(idx) {
 
 function moveSlide(dir) {
   let next = (currentSlide + dir + slides.length) % slides.length;
-  showSlide(next);
+  showSlide(next, dir);
 }
 
 function goToSlide(idx) {
-  showSlide(idx);
+  const dir = idx > currentSlide ? 1 : -1;
+  showSlide(idx, dir);
 }
 
 function autoAdvance() {
   autoAdvanceTimer = setTimeout(() => {
     moveSlide(1);
-  }, 10000); 
+  }, 5000); 
 }
 
 function resetAutoAdvance() {
@@ -33,10 +74,10 @@ function resetAutoAdvance() {
 }
 
 // Initialize
-showSlide(0);
+slides.forEach((slide, i) => {
+  slide.style.display = i === 0 ? 'flex' : 'none';
+});
 autoAdvance();
-
-
 
 
 
