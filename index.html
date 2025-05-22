@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
@@ -93,6 +93,47 @@
     </div>
   </div>
 </section>
+
+<div class="section-breaker">
+  <hr class="line">
+  <h2 class="!text-4xl">Seneste patientshistorier</h2>
+  <hr class="line">
+</div>
+
+
+<section class="stories-section">
+  <div class="stories-grid">
+
+    <div class="story-card">
+      <img src="/img/sagi.jpg" alt="">
+      <div class="story-content">
+        <h3>Et Liv Forandret</h3>
+        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <img src="/img/sagi.jpg" alt="">
+      <div class="story-content">
+        <h3>Et Liv Forandret</h3>
+        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <img src="/img/sagi.jpg" alt="">
+      <div class="story-content">
+        <h3>Et Liv Forandret</h3>
+        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   
 
 <div class="section-breaker">
@@ -102,93 +143,118 @@
 </div>
 
 
- <section class="eventSiteCardsSection">
-       
-        <div class="eventSiteCard cursor-pointer group" onclick="eventSiteCardDetails(this)">
-            <div class="eventSiteCardWhole">
-              <div class="eventSiteCardImage">
-                <img src="../img/sagi.jpg" alt="">
-                <div class="eventSiteCardPT">
-                  <p>Gratis</p>
-                </div>
-              </div>
-    
-              <div class="eventSiteCardHeader">
-                <p class="eventSiteCardCate">Udendørs</p>
-                <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
-                <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
-                <div class="grid !pt-[10px]">
-                  <div class="flex">
-                    <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
-                    <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
-                  </div>
-                  <div class="flex">
-                    <i class="fa-solid fa-location-dot !pr-5"></i>
-                    <p>Mozartsvej 13 2450 København SV</p>
-                  </div>
-                </div>
-              </div>
-              <div id="eventDetails" class="eventSiteCardDetails hidden">
-                <p>Her kommer mere information om arrangementet. Medbring egen kop!</p>
-              </div>
-            </div>
-          </div>
-        
-
-       
+  <section class="eventSiteCardsSection">
         <div class="eventSiteCard cursor-pointer">
-            <div class="eventSiteCardWhole">
-                <div class="eventSiteCardImage">
-                    <img src="../img/sagi.jpg" alt="">
-                    <div class="eventSiteCardPToff">
-                        <p>50,-</p>
-                    </div>
-                </div>
-                <div class="eventSiteCardHeader">
-                    <p class="eventSiteCardCate">Udendørs</p>
-                    <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
-                    <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
-                    <div class="grid !pt-[10px]">
-                        <div class="flex">
-                            <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
-                            <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+            <a href="https://tidslerne.nemtilmeld.dk/461/">
+                <div class="eventSiteCardWhole roundBar">
+                    <div class="eventSiteCardImage">
+                        <img src="../img/sagi.jpg" alt="" class="rounded-tl-[10px] rounded-tr-[10px]">
+    
+                        <div class="eventSiteCardPT !hidden">
+                            <p>Gratis</p>
                         </div>
-                        <div class="flex">
-                            <i class="fa-solid fa-location-dot !pr-5"></i>
-                            <p>Mozartsvej 13 2450 København SV</p>
+                        <div class="eventSiteCardPToff">
+                            <p>50,-</p>
+                        </div>
+                        
+                        <div class="eventSiteCardBadge">
+                            <p>Aflyst</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            
+                    <div class="eventSiteCardHeader rounded-bl-[10px] rounded-br-[10px]">
+                        <h6>Udendørs</h6>
+                        <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                        <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                        <div class="grid !pt-[10px]">
+                            <div class="flex">
+                                <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                                <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-location-dot !pr-5"></i>
+                                <p>Mozartsvej 13 2450 København SV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </a>
+        </div> 
+ 
+            <div class="eventSiteCard cursor-pointer">
+                <a href="https://tidslerne.nemtilmeld.dk/461/">
+                    <div class="eventSiteCardWhole roundBar">
+                        <div class="eventSiteCardImage">
+                            <img src="../img/sagi.jpg" alt="" class="rounded-tl-[10px] rounded-tr-[10px]">
+        
+                            <div class="eventSiteCardPT !hidden">
+                                <p>Gratis</p>
+                            </div>
+                            <div class="eventSiteCardPToff">
+                                <p>50,-</p>
+                            </div>
+                            
+                            <div class="eventSiteCardBadge">
+                                <p>Aflyst</p>
+                            </div>
+                        </div>
+                        <div class="eventSiteCardHeader rounded-bl-[10px] rounded-br-[10px]">
+                            <h6>Udendørs</h6>
+                            <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                            <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                            <div class="grid !pt-[10px]">
+                                <div class="flex">
+                                    <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                                    <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                                </div>
+                                <div class="flex">
+                                    <i class="fa-solid fa-location-dot !pr-5"></i>
+                                    <p>Mozartsvej 13 2450 København SV</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </a>
+            </div> 
+                
+        
+        <div class="eventSiteCard cursor-pointer">
+            <a  href="https://tidslerne.nemtilmeld.dk/461/">
+               <div class="eventSiteCardWhole roundBar">
+                    <div class="eventSiteCardImage">
+                        <img src="../img/sagi.jpg" alt=""  class="rounded-tl-[10px] rounded-tr-[10px]">
+                        <div class="eventSiteCardPT">
+                            <p>Gratis</p>
+                        </div>
+                        <div class="eventSiteCardPToff !hidden">
+                            <p>50,-</p>
+                        </div> 
+                        
+                        <div class="eventSiteCardBadge !hidden">
+                            <p>Aflyst</p>
+                        </div>
+                    </div>
+                    <div class="eventSiteCardHeader rounded-bl-[10px] rounded-br-[10px]">
+                        <h6>Udendørs</h6>
+                        <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
+                        <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
+                        <div class="grid !pt-[10px]">
+                            <div class="flex">
+                                <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
+                                <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-location-dot !pr-5"></i>
+                                <p>Mozartsvej 13 2450 København SV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </a>
         </div>
-         <div class="eventSiteCard cursor-pointer">
-            <div class="eventSiteCardWhole">
-                <div class="eventSiteCardImage">
-                    <img src="../img/sagi.jpg" alt="">
-                    <div class="eventSiteCardPToff">
-                        <p>50,-</p>
-                    </div>
-                </div>
-                <div class="eventSiteCardHeader">
-                    <p class="eventSiteCardCate">Udendørs</p>
-                    <h5 class="!pt-3">Kaffemik hos Rikke Rix</h5>
-                    <p>Tag med ud at drikke kaffe med Rikke blah blah blah...</p>
-                    <div class="grid !pt-[10px]">
-                        <div class="flex">
-                            <i class="fa-regular fa-calendar !pb-4 !pr-5"></i>
-                            <p>Torsdag d. 15. maj 2025 kl. 14:00 til 16:00</p>
-                        </div>
-                        <div class="flex">
-                            <i class="fa-solid fa-location-dot !pr-5"></i>
-                            <p>Mozartsvej 13 2450 København SV</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        
  </section>
+    <a href="#" class="custom-button">Se mere</a>
+
 
  <div class="section-breaker">
   <hr class="line">
@@ -235,12 +301,17 @@
   <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
 </div>
 </div>  
+    <a href="#" class="custom-button">Se mere</a>
+
+
+
 
  <div class="section-breaker">
   <hr class="line">
   <h2 class="!text-4xl">Støt Tidslerne</h2>
   <hr class="line">
 </div>
+  <a href="#" class="nyhed-button">Tilmeld dig nyhedsbrev</a>
 
 <div class="support">
   <div class="support-box">
