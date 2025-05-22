@@ -3,69 +3,47 @@ const slides = document.querySelectorAll('.carousel-slide');
 const indicators = document.querySelectorAll('.indicator');
 let autoAdvanceTimer = null;
 
-function showSlide(idx, direction = 1) {
+function showSlide(idx, dir = 1) {
   if (idx === currentSlide) return;
+  const prev = slides[currentSlide], next = slides[idx];
 
-  const prevSlide = slides[currentSlide];
-  const nextSlide = slides[idx];
+  next.style.display = 'flex';
+  next.style.position = 'absolute';
+  next.style.left = 0;
+  next.style.width = '100%';
+  next.style.transform = `translateX(${dir > 0 ? '100%' : '-100%'})`;
 
-  // Prepare next slide position
-  nextSlide.style.display = 'flex';
-  nextSlide.style.position = 'absolute';
-  nextSlide.style.left = '0';
-  nextSlide.style.top = '0';
-  nextSlide.style.width = '100%';
-  nextSlide.style.zIndex = '2';
-  nextSlide.style.transform = `translateX(${direction > 0 ? '100%' : '-100%'})`;
-
-  // Animate previous slide out
   anime({
-    targets: prevSlide,
-    translateX: [ '0%', direction > 0 ? '-100%' : '100%' ],
-    duration: 600,
+    targets: prev,
+    translateX: [0, dir > 0 ? '-100%' : '100%'],
+    duration: 500,
     easing: 'easeInOutQuad',
-    complete: function() {
-      prevSlide.style.display = 'none';
-      prevSlide.style.transform = '';
-      prevSlide.style.position = '';
-      prevSlide.style.zIndex = '';
-    }
+    complete: () => { prev.style.display = 'none'; prev.style.transform = ''; }
   });
 
-  // Animate next slide in
   anime({
-    targets: nextSlide,
-    translateX: [ direction > 0 ? '100%' : '-100%', '0%' ],
-    duration: 600,
+    targets: next,
+    translateX: [dir > 0 ? '100%' : '-100%', 0],
+    duration: 500,
     easing: 'easeInOutQuad',
-    complete: function() {
-      nextSlide.style.transform = '';
-      nextSlide.style.position = '';
-      nextSlide.style.zIndex = '';
-    }
+    complete: () => { next.style.transform = ''; next.style.position = ''; }
   });
 
-  slides.forEach((slide, i) => {
-    indicators[i].classList.toggle('active', i === idx);
-  });
+  indicators.forEach((el, i) => el.classList.toggle('active', i === idx));
   currentSlide = idx;
   resetAutoAdvance();
 }
 
 function moveSlide(dir) {
-  let next = (currentSlide + dir + slides.length) % slides.length;
-  showSlide(next, dir);
+  showSlide((currentSlide + dir + slides.length) % slides.length, dir);
 }
 
 function goToSlide(idx) {
-  const dir = idx > currentSlide ? 1 : -1;
-  showSlide(idx, dir);
+  showSlide(idx, idx > currentSlide ? 1 : -1);
 }
 
 function autoAdvance() {
-  autoAdvanceTimer = setTimeout(() => {
-    moveSlide(1);
-  }, 5000); 
+  autoAdvanceTimer = setTimeout(() => moveSlide(1), 5000);
 }
 
 function resetAutoAdvance() {
@@ -73,11 +51,10 @@ function resetAutoAdvance() {
   autoAdvance();
 }
 
-// Initialize
-slides.forEach((slide, i) => {
-  slide.style.display = i === 0 ? 'flex' : 'none';
-});
+// Init
+slides.forEach((s, i) => s.style.display = i === 0 ? 'flex' : 'none');
 autoAdvance();
+
 
 
 
