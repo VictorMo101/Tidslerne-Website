@@ -102,3 +102,75 @@ autoAdvance();
     navbar.style.transition = 'transform 0.3s';
     lastScrollY = window.scrollY;
   });
+
+
+
+
+// fr slet this shit if no want animation
+
+document.addEventListener('DOMContentLoaded', () => {
+  const square = document.querySelector('.stories-section');
+  square.style.opacity = 0; // Ensure initial opacity is 0
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        anime({
+          targets: square,
+          translateY: '-4rem',
+          opacity: [0, 1],
+          easing: 'easeInOutQuad',
+          duration: 500,
+        });
+        observer.unobserve(square); // Remove if you want it to animate only once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(square);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const square = document.querySelector('.eventSiteAssNigger');
+  square.style.opacity = 0; // Ensure initial opacity is 0
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        anime({
+          targets: square,
+          translateY: '-4rem',
+          opacity: [0, 1],
+          easing: 'easeInOutQuad',
+          duration: 500,
+        });
+        observer.unobserve(square); // Remove if you want it to animate only once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(square);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const square = document.querySelector('.LatestArticles');
+  square.style.opacity = 0; // Ensure initial opacity is 0
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        anime({
+          targets: square,
+          translateY: '-4rem',
+          opacity: [0, 1],
+          easing: 'easeInOutQuad',
+          duration: 500,
+        });
+        observer.unobserve(square); // Remove if you want it to animate only once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(square);
+});

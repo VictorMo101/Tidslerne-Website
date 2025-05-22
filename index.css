@@ -30,6 +30,7 @@
     /* Header */
 
 
+
 .heroContainer {
   position: relative;
   min-height: 400px;
@@ -677,6 +678,8 @@ font-weight: 500;
   width: var(--width-12col);
   margin: auto;
   padding: 4rem 0 4rem 0;
+  position: relative;
+  bottom: -4rem;
 }
 
 .stories-grid {
@@ -729,6 +732,21 @@ font-weight: 500;
   color: #888;
 }
 
+
+
+/* fr tilføjede like animations på de forskellige sektioner type shit ong slet dem her, og husk den i den der
+i stories section if no want ong*/
+
+.eventSiteAssNigger {
+  position: relative;
+  bottom: -4rem;
+}
+
+
+.LatestArticles {
+  position: relative;
+  bottom: -4rem;
+}
 
 @media (max-width: 900px) {
   .carousel-slide.active { flex-direction: column; }
