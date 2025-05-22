@@ -41,7 +41,7 @@
   /* Global CSS */
   
   body {
-    background-color: #e2d8de;
+    background-color: #FDF6FA;
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
   }
@@ -240,7 +240,6 @@
 
 /* footer */
 .main-footer {
-  margin-top: 100px;
   background-color: var(--color-background);
   color: #fff;
   padding: 20px 16px 0 16px;
@@ -368,3 +367,181 @@
 
   /* css for index.html starter her under */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* NavBar */
+.navbar {
+  background-color: #A880B9;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+  .nav-Logo {
+    transform: scale(0.9);
+  }
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn:hover {
+  color: #ddd;
+}
+
+/* Dropdown - now narrow and aligned right */
+.dropdown-nav {
+  position: fixed;
+  top: 65px;
+  right: -350px; /* Start offscreen */
+  width: 350px;
+  height: calc(100% - 65px);
+  background-color: #FDF6FA;
+  z-index: 19;
+  overflow-y: auto;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid #ddd;
+  transition: right 0.3s ease;
+}
+
+.dropdown-nav.open {
+  right: 0; /* Slide into view */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.overlay.show {
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.submenu > :nth-child(even) {
+  background-color: #F3E8F1;
+  padding: 0.5rem 0 0.5rem 1.3rem;
+
+
+}
+
+.submenu >:nth-child(odd) {
+  background-color: #F3E8F1; /* White */
+  padding: 0.5rem 0 0.5rem 1.3rem;
+
+}
+
+.menu-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.menu-item.open .arrow {
+  transform: rotate(90deg);
+}
+
+.arrow {
+  color: #373737;
+  transition: transform 0.3s ease;
+}
+
+.submenu {
+  display: none;
+  background: #F3E8F1;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+}
+
+/* Overlay - still dims rest of the page */
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.dropdown-nav.show {
+  display: block;
+}
+
+.overlay.show {
+  display: block;
+}

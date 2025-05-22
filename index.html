@@ -12,17 +12,86 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-      <ul>
-        <li> <h1>Tidslerne</h1> </li>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="aboutSite.html">Om os</a></li>
-        <li><a href="#">Behandlinger</a></li>
-        <li><a href="eventSite.html">Arrangementer</a></li>
-        <li><a href="gallerySite.html">Galleri</a></li>
-        <li><a href="videoSite.html">Video galleri</a></li>
+<!-- navbar -->
+
+
+    <header class="navbar">
+  <div class="nav-content">
+
+    <a href="index.html"><img class="nav-Logo" src="img/Tidslerne.png" alt=""></a>
+    
+    <div class="nav-buttons">
+      <button class="nav-btn"><i class="fas fa-user"></i><a href="https://medlem.tidslerne.dk">Login</a></button>
+      <button class="nav-btn"><i class="fas fa-search"></i> Search</button>
+      <button class="nav-btn menu-toggle"><i class="fas fa-bars"></i> Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<nav class="dropdown-nav" id="dropdownNav">
+  <ul class="menu">
+    <li class="menu-item">
+      <button class="menu-btn">Tidslerne <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="articles.html">artikler </a></li>
+        <li><a href="eventSite.html">eventsite</a></li>
+        <li><a href="https://example.com/run2">Vedtægter</a></li>
+        <li><a href="https://example.com/run2">Bestyrelsen</a></li>
+        <li><a href="https://example.com/run2">Kredsene</a></li>
+        <li><a href="https://example.com/run2">Støt Tidslerne</a></li>
+        <li><a href="https://example.com/run2">Bladet Tidslerne</a></li>
+        
+
       </ul>
-    </nav>
+    </li>
+    <li class="menu-item">
+      <button class="menu-btn">Behandling <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="">Konventionel</a></li>
+        <li><a href="">Komplementær</a></li>
+        <li><a href="">Behandling i udlandet</a></li>
+        <li><a href="">Cannabis</a></li>
+        <li><a href="PatientHistorier.html">Patienthistorier</a></li>
+        <li><a href="">Følge og senskader</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <button class="menu-btn">Kost & krop <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="aboutSite.html">Hvem er Tidslerne </a></li>
+        <li><a href="https://example.com/run2">Kontakt os</a></li>
+        <li><a href="https://example.com/run2">Vedtægter</a></li>
+        <li><a href="https://example.com/run2">Bestyrelsen</a></li>
+        <li><a href="https://example.com/run2">Kredsene</a></li>
+        <li><a href="https://example.com/run2">Støt tidslerne</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <button class="menu-btn">Arrangementer <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="https://example.com/chest1">Pecs</a></li>
+        <li><a href="https://example.com/chest2">Bench Press</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <button class="menu-btn">Galleri <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="gallerySite.html">Speech</a></li>
+        <li><a href="videoSite.html">Hat</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <button class="menu-btn">Info <span class="arrow">▶</span></button>
+      <ul class="submenu">
+        <li><a href="aboutSite.html">Om os</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- navbar -->
 
     <main>
         <div class="carousel">
@@ -30,25 +99,38 @@
   <div class="carousel-slides">
     <div class="heroContainer carousel-slide active" style="background-image: url('https://picsum.photos/1200/600?1');">
       <div class="heroContainerText">
-        <p class="text-xl">Family guy</p>
-        <p class="text-4xl">Kræft n shit</p>
-        <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+
+        <div class="heroContainerTextText">
+              <div class="heroContainerTextTextText">
+                <p class="text-xl">Tidslerne 1</p>
+                <p class="text-4xl">Kræft n shit</p>
+                <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+              </div>   
+         </div>
 
       </div>
     </div>
     <div class="heroContainer carousel-slide" style="background-image: url('https://picsum.photos/1200/600?2');">
       <div class="heroContainerText">
-        <p class="text-xl">Slide 2</p>
-        <p class="text-4xl">Noget andet</p>
-        <p>Her kan du skrive tekst til slide 2. Skift billedet og teksten som du vil.</p>
+        <div class="heroContainerTextText">
+              <div class="heroContainerTextTextText">
+                <p class="text-xl">Tidslerne 2</p>
+                <p class="text-4xl">Kræft n shit</p>
+                <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+              </div>   
+         </div>
 
       </div>
     </div>
     <div class="heroContainer carousel-slide" style="background-image: url('https://picsum.photos/1200/600?3');">
       <div class="heroContainerText">
-        <p class="text-xl">Slide 3</p>
-        <p class="text-4xl">Endnu en slide</p>
-        <p>Her er tredje slide. Du kan tilpasse indholdet frit.</p>
+        <div class="heroContainerTextText">
+              <div class="heroContainerTextTextText">
+                <p class="text-xl">Tidslerne 3</p>
+                <p class="text-4xl">Kræft n shit</p>
+                <p>luckily theres a family guy luckily there a man whopositively can do everything that makes us cry and cum hes a family guy</p>
+              </div>   
+         </div>
       </div>
     </div>
   </div>
@@ -64,7 +146,7 @@
     <img src="https://picsum.photos/400/300" alt="Tidslerne arrangement">
   </div>
   <div class="aboutContent">
-    <h2 class="!text-3xl">Hvem er Tidslerne</h2>
+    <h2 class="!text-3xl !text-[#404040]">Hvem er Tidslerne</h2>
     <p>Tidslerne er en frivillig kræftforening, der støtter mennesker, 
       som lever med senfølger efter kræft og kræftbehandling. Vi skaber
       fællesskab, forståelse og et trygt rum, hvor du ikke behøver forklare alt –
@@ -94,57 +176,67 @@
   </div>
 </section>
 
-<div class="section-breaker">
+
+
+<section class="stories-section">
+  <div class="section-breaker">
   <hr class="line">
   <h2 class="!text-4xl">Seneste patientshistorier</h2>
   <hr class="line">
 </div>
-
-
-<section class="stories-section">
   <div class="stories-grid">
 
-    <div class="story-card">
-      <img src="/img/sagi.jpg" alt="">
-      <div class="story-content">
-        <h3>Et Liv Forandret</h3>
-        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
-        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+    <a href="#">
+      <div class="story-card">
+        <img src="/img/sagi.jpg" alt="">
+        <div class="story-content">
+          <h3>Et Liv Forandret</h3>
+          <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+          <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
       </div>
     </div>
+    </a>
 
-    <div class="story-card">
-      <img src="/img/sagi.jpg" alt="">
-      <div class="story-content">
-        <h3>Et Liv Forandret</h3>
-        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
-        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+    <a href="#">
+      <div class="story-card">
+        <img src="/img/sagi.jpg" alt="">
+        <div class="story-content">
+          <h3>Et Liv Forandret</h3>
+          <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+          <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
       </div>
     </div>
-
-    <div class="story-card">
-      <img src="/img/sagi.jpg" alt="">
-      <div class="story-content">
-        <h3>Et Liv Forandret</h3>
-        <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
-        <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
+    </a>  
+    
+    
+    <a href="#">
+      <div class="story-card">
+        <img src="/img/sagi.jpg" alt="">
+        <div class="story-content">
+          <h3>Et Liv Forandret</h3>
+          <p>En personlig fortælling om, hvordan en kræftdiagnose ændrede hverdagen og satte livet i perspektiv – fra chok til accept og håb.</p>
+          <small>Skrevet af Dorthe Iversen | 17 Apr, 2026</small>
       </div>
     </div>
+    </a>
 
   </div>
+    <a href="#" class="custom-button">Se mere</a>
 </section>
 
   
 
-<div class="section-breaker">
+
+
+
+  <section class="eventSiteAssNigger">
+    <div class="section-breaker">
   <hr class="line">
   <h2 class="!text-4xl">Kommende arrangementer</h2>
   <hr class="line">
 </div>
-
-
-  <section class="eventSiteCardsSection">
-        <div class="eventSiteCard cursor-pointer">
+    <div class="eventSiteCardsSection">
+ <div class="eventSiteCard cursor-pointer">
             <a href="https://tidslerne.nemtilmeld.dk/461/">
                 <div class="eventSiteCardWhole roundBar">
                     <div class="eventSiteCardImage">
@@ -251,70 +343,80 @@
                 </div> 
             </a>
         </div>
-        
+    </div>
+       
+            <a href="#" class="custom-button">Se mere</a>
  </section>
-    <a href="#" class="custom-button">Se mere</a>
 
 
- <div class="section-breaker">
+<section class="LatestArticles">  
+   <div class="section-breaker">
   <hr class="line">
   <h2 class="!text-4xl">Seneste artikler</h2>
   <hr class="line">
 </div>
+  <div class="card-container"> 
 
-
-<div class="card-container"> 
- <div class="card">
-  <div class="image-container">
-    <img src="../img/sagi.jpg" alt="" />
-    <div class="label">Komplementær behandling</div>
-  </div>
-  <h2>Nammam appelsin</h2>
-  <p class="date">14. januar 2024</p>
-  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
-</div>
- <div class="card">
-  <div class="image-container">
-    <img src="../img/sagi.jpg" alt="" />
-    <div class="label">Komplementær behandling</div>
-  </div>
-  <h2>Nammam appelsin</h2>
-  <p class="date">14. januar 2024</p>
-  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
-</div>
-<div class="card">
-  <div class="image-container">
-    <img src="../img/sagi.jpg" alt="" />
-    <div class="label">Komplementær behandling</div>
-  </div>
-  <h2>Nammam appelsin</h2>
-  <p class="date">14. januar 2024</p>
-  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
-</div>
-<div class="card">
-  <div class="image-container">
-    <img src="../img/sagi.jpg" alt="" />
-    <div class="label">Komplementær behandling</div>
-  </div>
-  <h2>Nammam appelsin</h2>
-  <p class="date">14. januar 2024</p>
-  <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
-</div>
+    <a href="#">
+      <div class="card">
+        <div class="image-container">
+          <img src="../img/sagi.jpg" alt="" />
+          <div class="label">Komplementær behandling</div>
+        </div>
+        <h2>Nammam appelsin</h2>
+        <p class="date">14. januar 2024</p>
+        <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card">
+        <div class="image-container">
+          <img src="../img/sagi.jpg" alt="" />
+          <div class="label">Komplementær behandling</div>
+        </div>
+        <h2>Nammam appelsin</h2>
+        <p class="date">14. januar 2024</p>
+        <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+      </div>
+    </a>    <a href="#">
+      <div class="card">
+        <div class="image-container">
+          <img src="../img/sagi.jpg" alt="" />
+          <div class="label">Komplementær behandling</div>
+        </div>
+        <h2>Nammam appelsin</h2>
+        <p class="date">14. januar 2024</p>
+        <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+      </div>
+    </a>    <a href="#">
+      <div class="card">
+        <div class="image-container">
+          <img src="../img/sagi.jpg" alt="" />
+          <div class="label">Komplementær behandling</div>
+        </div>
+        <h2>Nammam appelsin</h2>
+        <p class="date">14. januar 2024</p>
+        <p class="body">æblemand kom inden i æblemand kom inden i giv mig dine børn inden i mig</p>
+      </div>
+    </a>
 </div>  
     <a href="#" class="custom-button">Se mere</a>
+</section>
 
 
 
 
- <div class="section-breaker">
-  <hr class="line">
-  <h2 class="!text-4xl">Støt Tidslerne</h2>
-  <hr class="line">
-</div>
-  <a href="#" class="nyhed-button">Tilmeld dig nyhedsbrev</a>
+
 
 <div class="support">
   <div class="support-box">
+
+     <div class="section-breaker">
+      <hr class="line">
+      <h2 class="!text-4xl">Støt Tidslerne</h2>
+      <hr class="line">
+    </div>
+
     <p class="font-bold">
       Støt – og stå sammen med os<br>
       Som medlem er du med til at styrke fællesskabet for kræftramte og pårørende.<br> </p>
@@ -322,8 +424,10 @@
       <p>Dit medlemskab hjælper os med at drive hjemmesiden, udgive artikler og arrangere fælles aktiviteter.<br>
       Det koster 100 kr. det første år – og gør en stor forskel.
     </p>
+
+      <a href="#" class="custom-button">Læs mere →</a>
+
   </div>
-   <a href="#" class="custom-button">Læs mere →</a>
 </div>
 
     </main>
