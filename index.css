@@ -282,7 +282,6 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f5e6fa;
   padding: 4rem;
 }
 
@@ -746,6 +745,78 @@ i stories section if no want ong*/
 .LatestArticles {
   position: relative;
   bottom: -4rem;
+}
+
+.newsLetterSection {
+  background-color: #f5e6fa;
+  padding: 4rem;
+  width: 100%;
+}
+
+.newsLetterContainer {
+  width: var(--width-12col);
+  margin: auto;
+  padding: 4rem 0 4rem 0;
+}
+
+.newsLetterContainerText {
+  margin: -1.5rem auto 0 auto;
+  width: 600px;
+  padding: 0 0 4rem 0;
+}
+
+.newsletterSignup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletterInputWrapper {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.newsletterInputWrapper i {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #80808E;
+  pointer-events: none;
+}
+.newsletterInput {
+  width: 100%;
+  height: 100%;
+  padding-left: 60px; /* space for the icon */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.newsletterButton {
+  width: 400px;
+  height: 60px;
+  background: #A880B9;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletterButton:hover {
+  background: #8c6ca3;
 }
 
 @media (max-width: 900px) {
